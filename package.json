@@ -1,0 +1,21 @@
+{
+  "name": "circuit-breaker",
+  "version": "1.0.0",
+  "description": "A bried circuit breaker for node js",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "api": "node ./src/api.js",
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run api\""
+  },
+  "author": "Adil khanday",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
